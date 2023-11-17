@@ -4,7 +4,7 @@
    [helix.dom :as d]
    [helix.core :refer [<> $]]
    [helix.hooks :refer [use-state]]
-   [goog.string :as gstring]
+   [cljs.pprint :as pprint]
    [wow-helix.components.numberfield :refer [numberfield]]
    [wow-helix.components.button :refer [button]]
    [wow-helix.components.alert :refer [alert]]
@@ -37,8 +37,8 @@
                                     ($ button {:on-click calc-result} "Посчитать"))
                              (d/div {:class ["group__result"]}
                                     (<> ($ alert {:best? (and (pos? small-result) (> small-result large-result))} 
-                                           (gstring/format "Из малых в большие: %.2f" small-result)))
+                                           (pprint/cl-format nil "Из малых в большие: ~,2f" small-result)))
                                     (<> ($ alert {:best? (and (pos? large-result) (> large-result small-result))} 
-                                           (gstring/format "Из больших в малые: %.2f" large-result))))
+                                           (pprint/cl-format nil "Из больших в малые: ~,2f" large-result))))
                              (d/div {:class ["group__button"]}
                                     ($ button {:on-click reset-all} "Сбросить")))))))))
