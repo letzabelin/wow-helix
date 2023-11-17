@@ -1,6 +1,6 @@
-(ns wow-calc-helix.components.button
+(ns wow-helix.components.button
   (:require
-   [wow-calc-helix.render-util :refer [defnc]]
+   [wow-helix.render-util :refer [defnc]]
    [helix.core :refer [$]]
    ["@mui/material/Button" :default Button]))
 

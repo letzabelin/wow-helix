@@ -1,14 +1,14 @@
-(ns wow-calc-helix.pages.home
+(ns wow-helix.pages.home
   (:require
-   [wow-calc-helix.render-util :refer [defnc]]
+   [wow-helix.render-util :refer [defnc]]
    [helix.dom :as d]
    [helix.core :refer [<> $]]
    [helix.hooks :refer [use-state]]
    [goog.string :as gstring]
-   [wow-calc-helix.components.numberfield :refer [numberfield]]
-   [wow-calc-helix.components.button :refer [button]]
-   [wow-calc-helix.components.alert :refer [alert]]
-   [wow-calc-helix.util :refer [calc-large calc-small]]))
+   [wow-helix.components.numberfield :refer [numberfield]]
+   [wow-helix.components.button :refer [button]]
+   [wow-helix.components.alert :refer [alert]]
+   [wow-helix.util :refer [calc-large calc-small]]))
 
 (declare home-page)
 

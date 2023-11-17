@@ -1,8 +1,8 @@
-(ns wow-calc-helix.app
+(ns wow-helix.app
   (:require
-   [wow-calc-helix.render-util :refer [defnc]]
+   [wow-helix.render-util :refer [defnc]]
    [helix.core :refer [$]]
-   [wow-calc-helix.pages.home :refer [home-page]]
+   [wow-helix.pages.home :refer [home-page]]
    ["react-dom/client" :refer [createRoot] :rename {createRoot create-root}]))
 
 (declare app)

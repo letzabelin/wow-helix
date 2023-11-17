@@ -1,6 +1,6 @@
-(ns wow-calc-helix.components.numberfield
+(ns wow-helix.components.numberfield
   (:require
-   [wow-calc-helix.render-util :refer [defnc]]
+   [wow-helix.render-util :refer [defnc]]
    [helix.core :refer [$]]
    ["@mui/material/TextField" :default TextField]
    ["@mui/material/InputAdornment" :default InputAdornment]))

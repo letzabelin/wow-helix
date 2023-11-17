@@ -1,4 +1,4 @@
-(ns wow-calc-helix.refresh
+(ns wow-helix.refresh
   (:require [helix.experimental.refresh :as her]))
 
 (her/inject-hook!)

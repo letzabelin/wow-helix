@@ -1,6 +1,6 @@
-(ns wow-calc-helix.render-util
+(ns wow-helix.render-util
   #?(:clj  (:require [helix.core])
-     :cljs (:require-macros [wow-calc-helix.render-util])))
+     :cljs (:require-macros [wow-helix.render-util])))
 
 #?(:clj
    (defmacro defnc [type & form-body]

@@ -12,5 +12,5 @@
    :asset-path "/js",
    :modules
    {:main
-    {:entries [wow-calc-helix.app],
-     :init-fn wow-calc-helix.app/init}}}}}
+    {:entries [wow-helix.app],
+     :init-fn wow-helix.app/init}}}}}

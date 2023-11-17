@@ -1,4 +1,4 @@
-(ns wow-calc-helix.util)
+(ns wow-helix.util)
 
 (defn calc-large [large small]
   (- (- (* large 10)
