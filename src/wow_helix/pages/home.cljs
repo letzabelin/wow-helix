@@ -29,10 +29,10 @@
               (<> (d/div {:class ["group"]}
                          (<> (d/div {:class ["group__form"]} (<> ($ numberfield {:value large
                                                                                  :on-change handle-large-change
-                                                                                 :label "Большая:"})
+                                                                                 :label "Малая:"})
                                                                  ($ numberfield {:value small
                                                                                  :on-change handle-small-change
-                                                                                 :label "Малая:"})))
+                                                                                 :label "Большая:"})))
                              (d/div {:class ["group__button"]}
                                     ($ button {:on-click calc-result} "Посчитать"))
                              (d/div {:class ["group__result"]}
